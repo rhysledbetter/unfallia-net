@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color:black;
+    font-family:Arial;
+    font-size: 1.5em;
+    background-color: indigo;
+}
+
+article {
+    width:900px;
+    margin:auto;
+    background-color: darkorchid;
+    padding: 1em;
+}
+
+h1 {
+    background-color: indigo;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 16px;
+    text-align: center;
+}
