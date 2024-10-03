@@ -1,0 +1,43 @@
+<!-- Add Provider Section -->
+<section class="page-section bg-primary" id="add-magic-item-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mt-0">Add a New Magic Item</h2>
+        <hr class="divider my-4">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- Nested Row within Card Body -->
+      <div class="row o-hidden border-0">
+        <div class="col-lg-12">
+          <h1 class="mt-0" *ngIf="submitted">Added successfully!</h1>
+          <form class="user" action="/magic-items/add" method="post" *ngIf="!submitted">
+            <div class="form-group row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control form-control-user" name="name" id="inputName" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="inputLocationFound">Location Found</label>
+                <input type="text" class="form-control form-control-user" name="location_found" id="inputLocationFound"
+                    required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <label for="inputDescription">Description</label>
+                <textarea class="form-control form-control-user" name="description" id="inputDescription" required></textarea>
+              </div>
+              <div class="col-sm-6">
+                <label for="inputAbilities">Abilities</label>
+                <textarea class="form-control form-control-user" name="abilities" id="inputAbilities" required></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Add Magic Item</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

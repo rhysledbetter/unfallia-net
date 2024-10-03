@@ -1,0 +1,36 @@
+<!-- Spells -->
+        <section class="page-section bg-primary" id="magic-items">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Magic Items</h2>
+                <hr class="divider" />
+                <!-- Begin magic items table -->
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Location Found</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Abilities</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each magic_items}}
+                                <tr>
+                                    <td scope="row">{{ name }}</td>
+                                    <td scope="row">{{ location_found }}</td>
+                                    <td scope="row">{{ description }}</td>
+                                    <td scope="row">{{ abilities }}</td>
+                                    <td scope="row">
+                                        <a href="/magic-items/edit/{{ id }}" class="btn btn-secondary btn-sm">Edit</a>
+                                        <a href="/magic-items/delete/{{ id }}" class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                <a href="/magic-items/add-magic-item" class="btn btn-primary btn-sm">Add New Magic Item</a>
+            </div>
+        </section>

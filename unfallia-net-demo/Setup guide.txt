@@ -1,0 +1,7 @@
+1. Start in an empty directory
+1a. Install Node.js
+2. Open the directory in VS code
+3. Open a new terminal and run "npm init"
+4. Create the app.js to create the server, and requests.js to handle request routing
+5. make a public folder for your html pages.
+4. run "npm express"
