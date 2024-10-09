@@ -15,7 +15,13 @@ var apiRouter = require('./api/routes/main.routes')
 
 var app = express();
 
-app.use(cors({'origin':'http://localhost:4200'}));
+
+app.use(cors({'origin':[
+  'http://localhost:4200',
+  'http://192.168.56.1:4200',
+  'http://192.168.0.202:4200',
+]}));
+
 app.use(
   helmet({
     xFrameOptions: { action: "sameorigin" }
